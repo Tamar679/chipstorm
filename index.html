@@ -357,6 +357,44 @@ details.rk,.hist{background:var(--ink2);border:1px solid var(--line);border-radi
 body{padding-top:env(safe-area-inset-top)}
 .spm{font:400 72px/1 'Suez One',serif;color:#F0CF8A;margin:18px 0 6px;transition:transform .25s}.spm.hit{transform:scale(1.25);text-shadow:0 0 24px rgba(240,207,138,.6)}
 .clubh{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 10px;border:1px solid #335247;border-radius:10px;background:#162A23;margin-bottom:4px}
+
+/* game rail */
+.grail{margin:6px 0 4px}.grh{display:flex;align-items:center;justify-content:space-between;margin:4px 2px 10px}.grh h2{font:400 22px/1.1 'Suez One',serif;color:var(--ivory);margin:0}
+.gnav{display:flex;gap:6px}.gnav button{width:34px;height:34px;border-radius:50%;padding:0;font-size:20px;line-height:1;background:var(--ink3);border:1px solid var(--line2);color:var(--ivory)}
+@media(hover:none){.gnav{display:none}}
+.gtrack{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}.gtrack::-webkit-scrollbar{display:none}
+.gcard{--a:#7A1024;--b:#C8322E;--rb:#F0CF8A;flex:0 0 212px;scroll-snap-align:start;position:relative;display:flex;flex-direction:column;border-radius:20px;overflow:hidden;background:linear-gradient(165deg,var(--b),var(--a) 70%);border:2px solid rgba(240,207,138,.55);box-shadow:0 14px 30px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.18);min-height:318px;isolation:isolate}
+.gcard:before{content:'';position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 0,rgba(255,255,255,.22),transparent 60%);z-index:-1}
+.grib{background:linear-gradient(180deg,#F6D58E,#D9AE5B);color:#2A1C05;font-weight:800;font-size:12.5px;text-align:center;padding:6px 8px;letter-spacing:.2px}
+.gart{height:128px;display:grid;place-items:center;position:relative}
+.gbody{padding:0 14px;text-align:center;flex:1}.gbody h3{margin:0 0 3px;font:400 23px/1.1 'Suez One',serif;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.35)}.gbody small{color:rgba(255,255,255,.82);font-size:12.5px}
+.gplay{margin:10px 12px 4px;padding:11px 8px;border-radius:12px;border:0;background:linear-gradient(180deg,#5FD68A,#239B55);color:#fff;font-weight:800;font-size:17px;box-shadow:0 4px 0 #156B39,0 8px 14px rgba(0,0,0,.3);text-shadow:0 1px 0 rgba(0,0,0,.25)}
+.gplay:active{transform:translateY(3px);box-shadow:0 1px 0 #156B39}.gplay:disabled{background:#3A4A44;box-shadow:none;color:#BFD0C8;font-size:13.5px}
+.gmore{margin:0 12px 10px;padding:4px;background:none;border:0;color:rgba(255,255,255,.8);font-size:12.5px;text-decoration:underline;min-height:22px}.gmore.sp{display:block}
+.gom{--a:#5A1F05;--b:#D8731F}.gsp{--a:#26105A;--b:#8A44E8}.gsn{--a:#0B2E4A;--b:#1F86C2}.gbo{--a:#08301F;--b:#1E8E5C}.gdc{--a:#121B45;--b:#3B57C8}
+.gmc{position:relative;width:150px;height:110px;direction:ltr}.gmc i{position:absolute;left:50%;top:50%;width:62px;height:88px;margin:-44px 0 0 -31px;background:linear-gradient(180deg,#FFFDF7,#EDE5D3);border-radius:8px;border:1px solid #D6CCB6;box-shadow:0 8px 16px rgba(0,0,0,.4);color:#1D1D1B;font-style:normal;transform:rotate(calc(var(--k)*13deg)) translate(calc(var(--k)*22px),calc(var(--k)*var(--k)*4px));transform-origin:50% 120%}
+.gmc i.r{color:#B3261E}.gmc b{position:absolute;left:7px;top:4px;font:800 19px/1 Assistant,sans-serif}.gmc em{position:absolute;inset:auto 0 9px;text-align:center;font-style:normal;font-size:34px;line-height:1}
+.gx{font:400 54px/1 'Suez One',serif;color:#FFE29A;text-shadow:0 0 18px rgba(255,200,90,.7),0 3px 0 #5A2A00;position:relative;z-index:1}
+.gxr{position:absolute;width:120px;height:120px;border-radius:50%;background:conic-gradient(#FF5E7E 0 60deg,#FFB347 0 120deg,#5FD68A 0 180deg,#5AB8FF 0 240deg,#B07BFF 0 300deg,#FFE29A 0 360deg);opacity:.35;animation:gspin 14s linear infinite;mask:radial-gradient(circle,transparent 42%,#000 43%)}
+@keyframes gspin{to{transform:rotate(360deg)}}
+.grg svg{filter:drop-shadow(0 6px 10px rgba(0,0,0,.45))}
+.gbn{font:400 60px/1 'Suez One',serif;color:#FFE29A;text-shadow:0 3px 0 #0B3D2A}.gbl{position:absolute;bottom:14px;color:#D9F2E4;font-weight:700}
+.gcal .ico{width:70px;height:70px;color:#FFE29A;stroke-width:1.4}
+.gpr{height:8px;margin:7px 4px 3px;border-radius:5px;background:rgba(0,0,0,.45);overflow:hidden;border:1px solid rgba(255,255,255,.15)}.gpr span{display:block;height:100%;background:linear-gradient(90deg,#F6D58E,#FFF1C1)}.gps{display:block}
+/* dock */
+.dockpad{height:76px}
+.dock{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,860px);display:flex;justify-content:space-around;align-items:flex-end;gap:2px;padding:6px 8px calc(6px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(16,32,27,.92),#0B1512);border-top:1px solid var(--line2);backdrop-filter:blur(8px);z-index:40;border-radius:18px 18px 0 0}
+.dk{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;color:var(--muted);font-size:11.5px;font-weight:700;padding:4px 8px;min-width:58px}.dk .ico{width:24px;height:24px;color:var(--ivory)}
+.dk em{position:absolute;top:0;right:8px;min-width:17px;height:17px;border-radius:9px;background:#E24B4A;color:#fff;font:800 11px/17px Assistant,sans-serif;font-style:normal}
+.dk.mid{margin-top:-26px}.dk.mid .ico{width:34px;height:34px;padding:12px;box-sizing:content-box;border-radius:50%;background:radial-gradient(circle at 35% 30%,#F6D58E,#B8862E);color:#2A1C05;box-shadow:0 6px 16px rgba(0,0,0,.5),0 0 0 4px #0B1512}.dk.mid span{color:var(--brass-hi)}
+/* rings */
+.rgrow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.rgi{display:flex;flex-direction:column;align-items:center;padding:8px 4px;border-radius:12px;background:var(--ink3);border:1px solid var(--line)}.rgi small{color:var(--muted)}.rgi:not(.on) b{color:var(--muted)}
+/* table life */
+.thk{display:flex;gap:4px;justify-content:center;margin-top:4px}.thk i{width:6px;height:6px;border-radius:50%;background:var(--brass-hi);animation:thk 1s infinite}.thk i:nth-child(2){animation-delay:.15s}.thk i:nth-child(3){animation-delay:.3s}
+@keyframes thk{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.sty.pro{color:#FFE29A;font-weight:800}
+.st.on:not(.me){box-shadow:0 0 0 2px var(--brass-hi),0 0 22px rgba(240,207,138,.45)}
+@media (max-width:520px){.gcard{flex-basis:196px;min-height:300px}.gart{height:116px}}
 </style>
 </head>
 <body>
@@ -375,7 +413,8 @@ const STY={
   rock:{he:'Tight',tight:1.18,aggr:.6,bluff:.02},
   lag:{he:'Aggressive',tight:.86,aggr:1.55,bluff:.12},
   station:{he:'Calling station',tight:.76,aggr:.5,bluff:.03},
-  bluffer:{he:'Bluffer',tight:.92,aggr:1.25,bluff:.22}};
+  bluffer:{he:'Bluffer',tight:.92,aggr:1.25,bluff:.22},
+  pro:{he:'PRO',tight:.9,aggr:1.15,bluff:.1,pro:1}};
 const STYK=Object.keys(STY);
 const POOL=['Maya','Roni','Dana','Omer','Noa','Itay','Shira','Yoni','Tamar','Avi','Lior','Gal','Hila','Ben','Eden','Yuval','Uri','Michal','Dor','Karen','Alon','Rotem'];
 const POS={1:[[50,3]],2:[[22,5],[78,5]],3:[[12,38],[50,3],[88,38]],4:[[11,40],[30,3],[70,3],[89,40]]};
@@ -534,22 +573,50 @@ function getRich(){if(RICH)return RICH;let sd=Math.floor(Date.now()/(7*864e5))*7
 function richPanel(){const all=getRich().map(x=>({...x})).concat([{n:esc(PROF.name),av:PROF.av,c:WALLET,me:1}]).sort((a,b)=>b.c-a.c);const me=all.findIndex(x=>x.me)+1;
  const rows=all.slice(0,10).map((x,i)=>[i+1,x]);if(me>10)rows.push([me,all[me-1]]);
  return `<div class="panel"><div class="sth"><span>🏆 Weekly Richest Players</span></div>${rows.map(([r,x])=>`<div class="lbr ${x.me?'me':''}"><span>${r<=3?['🥇','🥈','🥉'][r-1]:r+'.'} ${x.av} ${x.n}</span><span>${short(x.c)}</span></div>`).join('')}</div>`}
+
+// ---------- home: game cards you scroll through, each with its own Play button ----------
+const RINGT=[[1,'Bronze','#C98B4E',5000],[3,'Silver','#D5DAE2',20000],[10,'Gold','#F0CF8A',75000],[25,'Diamond','#9FE3FF',250000]];
+const ringsOf=()=>PROF.rings=PROF.rings||{spin:0,sng:0,got:{}};
+function ringProg(k){const n=ringsOf()[k]||0,nx=RINGT.find(t=>n<t[0]);return{n,nx,prev:[...RINGT].reverse().find(t=>n>=t[0])}}
+function addRingWin(k){const R0=ringsOf();R0[k]=(R0[k]||0)+1;const n=R0[k];RINGT.forEach(t=>{const id=k+t[0];if(n>=t[0]&&!R0.got[id]){R0.got[id]=Date.now();WALLET+=LGp(t[3]);setTimeout(()=>{toast(`💍 New ${t[1]} ${k==='spin'?'Spin':'Sit & Go'} ring! +${short(t[3])}`);SND.win()},1600)}});saveP();save()}
+function ringSvg(col,on,sz){sz=sz||64;const c=on?col:'#2B3F38',g=on?'#fff':'#3A524A';return `<svg viewBox="0 0 64 64" width="${sz}" height="${sz}" aria-hidden="true"><ellipse cx="32" cy="40" rx="20" ry="17" fill="none" stroke="${c}" stroke-width="7"/><ellipse cx="32" cy="40" rx="20" ry="17" fill="none" stroke="${g}" stroke-opacity=".35" stroke-width="1.5"/><path d="M20 22 32 8 44 22 32 30Z" fill="${c}" stroke="${g}" stroke-opacity=".6"/><path d="M32 8v22M20 22h24" stroke="${g}" stroke-opacity=".5"/></svg>`}
+function openRings(){const R0=ringsOf();const row=k=>`<div class="rgrow">${RINGT.map(t=>{const on=(R0[k]||0)>=t[0];return `<div class="rgi ${on?'on':''}">${ringSvg(t[2],on,52)}<b>${t[1]}</b><small>${t[0]} win${t[0]>1?'s':''}</small></div>`}).join('')}</div>`;
+ modal(`<h2>💍 Champion rings</h2><div class="hint">Win tournaments to earn rings. Every ring pays chips.</div><h3 class="sec">Spin & Go · ${R0.spin||0} wins</h3>${row('spin')}<h3 class="sec">Sit & Go · ${R0.sng||0} wins</h3>${row('sng')}`,'rings')}
+function bestTour(f){const c=TABLES.filter(t=>t.tour&&!t.mtt&&f(t)&&!tLeft(t.id)&&WALLET>=t.fee);if(!c.length)return null;const ok=c.filter(t=>t.fee*10<=WALLET);return ok.length?ok.sort((a,b)=>b.fee-a.fee)[0]:c.sort((a,b)=>a.fee-b.fee)[0]}
+function playTour(kind){const t=bestTour(kind==='spin'?(t=>t.spin):(t=>!t.spin));if(!t){toast('No tournament fits your bankroll right now');FILTER='tour';return lobby()}joinTour(t.id)}
+function quickSeatT(kind){const c=TABLES.filter(t=>!t.tour&&(kind==='omaha'?TYPES[t.type].o:t.type==='holdem')&&t.seats.length<t.max&&WALLET>=t.buy/2);if(!c.length){toast('No open table fits your bankroll right now');FILTER=kind;return lobby()}
+ const good=c.filter(t=>t.buy*4<=WALLET);const pk=good.length?good.sort((a,b)=>b.bb-a.bb)[0]:c.sort((a,b)=>a.bb-b.bb)[0];toast(`Seating you at ${pk.name}`);joinCash(pk.id)}
+function gameRail(dct){const live=k=>TABLES.filter(t=>!t.tour&&(k==='omaha'?TYPES[t.type].o:t.type==='holdem')).length,mtt=TABLES.find(t=>t.mtt);
+ const mini=(cs)=>`<span class="gmc">${cs.map(([r,su,red],i)=>`<i class="${red?'r':''}" style="--k:${i-(cs.length-1)/2}"><b>${r}</b><em>${su}</em></i>`).join('')}</span>`;
+ const prog=k=>{const g=ringProg(k);if(!g.nx)return `<div class="gpr"><span style="width:100%"></span></div><small class="gps">All rings collected 💎</small>`;const lo=g.prev?g.prev[0]:0,f=(g.n-lo)/(g.nx[0]-lo);return `<div class="gpr"><span style="width:${Math.round(f*100)}%"></span></div><small class="gps">${g.n}/${g.nx[0]} wins · ${g.nx[1]} ring</small>`};
+ const card=(cls,rib,art,title,sub,btnJs,more,lock)=>`<article class="gcard ${cls}"><div class="grib">${rib}</div><div class="gart">${art}</div><div class="gbody"><h3>${title}</h3>${sub}</div><button class="gplay" onclick="${btnJs}" ${lock?'disabled':''}>${lock||'Play now'}</button>${more?`<button class="gmore" onclick="${more}">Choose a table</button>`:'<span class="gmore sp"></span>'}</article>`;
+ const mtl=tLeft(mtt.id);
+ const cards=[
+  card('ghe',`${live('holdem')} live tables`,mini([['A','♠',0],['K','♥',1]]),'Texas Hold’em','<small>No-limit · 2 hole cards</small>',"quickSeatT('holdem')","FILTER='holdem';lobby()"),
+  card('gom',`${live('omaha')} live tables`,mini([['A','♦',1],['J','♣',0],['10','♥',1],['9','♠',0]]),'Omaha','<small>Pot-limit · 4 to 6 hole cards</small>',"quickSeatT('omaha')","FILTER='omaha';lobby()"),
+  card('gsp','Win up to 100×',`<span class="gx">100×</span><span class="gxr"></span>`,'Spin & Go',prog('spin'),"playTour('spin')","FILTER='tour';lobby()"),
+  card('gsn','Champion rings',`<span class="grg">${ringSvg(ringProg('sng').nx?ringProg('sng').nx[2]:'#9FE3FF',true,92)}</span>`,'Sit & Go',prog('sng'),"playTour('sng')","FILTER='tour';lobby()"),
+  card('gbo',`Prize pool ${short(mtt.fee*mtt.field)}`,`<span class="gbn">500</span><small class="gbl">players</small>`,mtt.name,`<small>Buy-in ${short(mtt.fee)} · top ${mtt.paid} get paid</small>`,`joinTour(${mtt.id})`,"FILTER='tour';lobby()",mtl?'Out · back in '+hms(mtl):WALLET<mtt.fee?'Need '+short(mtt.fee):''),
+  card('gdc',`<span id="gcd">Ends in ${untilTomorrow()}</span>`,`<span class="gcal">${ico('calendar')}</span>`,'Daily Challenge',`<small>${dct&&dct.place?'Today: '+ord(dct.place)+' place':'Same cards for everyone · win '+short(DPRIZE[0])}</small>`,'openDaily()','')];
+ return `<section class="grail"><div class="grh"><h2>Choose a game</h2><span class="gnav"><button aria-label="Scroll back" onclick="railGo(-1)">‹</button><button aria-label="Scroll forward" onclick="railGo(1)">›</button></span></div><div class="gtrack" id="gtrack">${cards.join('')}</div></section>`}
+function railGo(d){const t=document.getElementById('gtrack');if(!t)return;const rtl=getComputedStyle(t).direction==='rtl';t.scrollBy({left:(rtl?-d:d)*240,behavior:'smooth'})}
+var RAILX=0;function railInit(){const t=document.getElementById('gtrack');if(!t)return;t.scrollLeft=RAILX;t.onscroll=()=>{RAILX=t.scrollLeft}}
+setInterval(()=>{if(VIEW==='home'){const e=document.getElementById('gcd');if(e)e.textContent='Ends in '+untilTomorrow()}},1000);
+function homeDock(){const it=(ic,t,js,badge,c)=>`<button class="dk ${c||''}" onclick="${js}">${ico(ic)}<span>${t}</span>${badge?`<em>${badge}</em>`:''}</button>`;
+ return `<nav class="dock" aria-label="Quick menu">${it('target','Missions','openMissions()',misReady()||'')}${it('palette','Style','openStyle()')}${it('wheel','Spin','openWheel()',spinReady()?'1':'','mid')}${STANDALONE?it('medal','Rings','openRings()'):it('shield','Club','openClub()')}${it('podium','Ranks','openLB()')}</nav>`}
 function renderHome(){if(VIEW!=='home')return;if(WALLET<500&&!BROKESHOWN&&!MDK){BROKESHOWN=true;setTimeout(()=>{if(!MDK)openBroke()},700)}const done=ACH.filter(a=>PROF.ach[a[0]]).length,hl=hourlyLeft(),wr=STATS.hands?Math.round(STATS.won/STATS.hands*100):0;
  const rw=(ic,t,st,js,ready,id)=>`<button class="rwi ${ready?'ready':''}" onclick="${js}">${ico(ic)}<span><b>${t}</b><small ${id?`id="${id}"`:''}>${st}</small></span></button>`;
  const dst=(ic,t,st,js,ready)=>`<button class="dst ${ready?'ready':''}" onclick="${js}">${ico(ic)}<b>${t}</b><small>${st}</small></button>`;
  const mr=(ic,t,js,x)=>`<button class="mr" onclick="${js}">${ico(ic)}<span>${t}</span>${x||''}</button>`;
  const dct=dcToday();
- v.innerHTML=topBar()+`<section class="hero"><div class="hero-t"><h1 class="wm">ChipStorm</h1><p class="tagl">Real poker, smart bots and friends — free.</p>
- <button class="pr play" onclick="quickSeat()">${ico('play')}<span>Play now</span></button><small class="hero-s">We’ll seat you at a table that fits your bankroll</small></div>
- <div class="fan" aria-hidden="true">${[['A','♠',0],['K','♥',1],['Q','♦',1]].map(([r,su,red],i)=>`<span class="fc ${red?'r':''}" style="--i:${i}"><b>${r}<i>${su}</i></b><em>${su}</em></span>`).join('')}</div></section>
- <div class="dsts">${dst('cards','Tables',`Hold’em & Omaha · ${TABLES.filter(t=>!t.tour).length} live tables`,"FILTER='all';lobby()")}${dst('trophy','Tournaments','Including The Big One — 500 players',"FILTER='tour';lobby()")}${dst('calendar','Daily Challenge',dct&&dct.place?'Today: '+ord(dct.place)+' place':'Same cards for everyone · win '+short(DPRIZE[0]),'openDaily()',!dct)}</div>
+ v.innerHTML=topBar()+gameRail(dct)+`
  <h3 class="sec">Daily rewards</h3>
  <div class="rws">${rw('gift','Free chips',hl?'Next in '+hms(hl):`Ready! Tap to collect ${fmt(hourlyAmt())}`,'collectHourly()',!hl,'hrly')}${rw('wheel','Lucky wheel',spinReady()?'Your free spin is ready':'Next spin in '+untilTomorrow(),'openWheel()',spinReady())}${rw('flame','Login streak',streakInfo().ready?'Collect today’s bonus!':(PROF.streak.n||0)+'-day streak','openStreak()',streakInfo().ready)}${rw('target','Missions',misReady()?misReady()+' ready to claim!':'Daily & weekly rewards','openMissions()',!!misReady())}</div>
  <div class="mrs">${mr('podium','Leaderboards','openLB()',lgBadge(lgOf()))}${SHOP_ON()?mr('chip','Premium','openShop()'):''}${mr('palette','Style Shop','openStyle()')}${mr('book','How to Play','openTutorial(0)')}${STANDALONE?'':mr('users','Play with Friends','openPrivate()')}${STANDALONE?'':mr('shield','Clubs','openClub()',PROF.club?`<small>${esc(PROF.club.n)}</small>`:'')}${mr('medal','Achievements','openAch()',`<small>${done}/${ACH.length}</small>`)}${STANDALONE&&!isAppMode()?mr('phone','Install as app','openInstall()'):''}</div>
  ${WALLET<500?`<div class="row" style="justify-content:center;margin-top:12px"><button class="pr" onclick="openBroke()">🪙 Out of chips? See all the ways to get more</button></div>`:''}
  <div class="two">${STANDALONE?'':onlinePanel()}${lbPanel()}<div class="panel"><div class="sth"><span>${ico('user')} ${esc(PROF.name)}</span><button onclick="openProfile()" style="padding:4px 10px;font-size:12px">Profile & stats</button></div>
  <div class="sgrid"><div><span>Level</span><b>${PROF.lvl}</b></div><div><span>Hands</span><b>${fmt(STATS.hands)}</b></div><div><span>Win rate</span><b>${wr}%</b></div><div><span>Biggest pot</span><b>${short(STATS.biggest)}</b></div><div><span>Tournaments won</span><b>${STATS.tWon}</b></div><div><span>Achievements</span><b>${done}/${ACH.length}</b></div></div></div></div>
- ${rankPanel()}${footerHtml()}`}
+ ${rankPanel()}${footerHtml()}<div class="dockpad"></div>${homeDock()}`;railInit()}
 setInterval(()=>{if(VIEW==='home'){const e=document.getElementById('hrly');if(e&&e.textContent!==undefined){const hl=hourlyLeft();e.textContent=hl?'Next in '+hms(hl):`Ready! Tap to collect ${fmt(hourlyAmt())}`}}},1000);
 function collectHourly(){const hl=hourlyLeft();if(hl){toast('Next bonus in '+hms(hl));return}const a=hourlyAmt();PROF.hourly=Date.now();WALLET+=LGp(a);saveP();save();toast(`🎁 You collected ${fmt(a)} chips`);SND.win();rerender()}
 // wheel
@@ -971,6 +1038,7 @@ function act(i,t,amt){const p=G.P[i],tc=G.currentBet-p.bet;
   G.P.forEach(q=>{if(q!==p&&!q.folded&&!q.allin)q.acted=false})}
   p.lastAct=p.allin?'All-in':(was===0?'Bet '+fmt(nb):'Raise to '+fmt(nb));if(p.allin)note=' '+fmt(nb);SND.chip()}
  G.log.push(`${pn(p)}: ${p.lastAct}${note}`);
+ if(p.style&&!G.client&&G.bub&&!(G.bub[i]&&G.bub[i].until>Date.now())){const rr=Math.random();if(p.allin&&t!=='fold'&&rr<.35)later(()=>say(i,pick(['All in! 💥','Let’s gamble 🎲','I’m all in 😎','Your move…'])),200);else if(t==='raise'&&G.raises>=2&&rr<.18)later(()=>say(i,pick(['Re-raise 🔥','Not so fast…','I like my hand 😏'])),200);else if(t==='fold'&&G.raises>=2&&rr<.06)later(()=>say(i,pick(['Too rich for me','Nice bet 👏','Fold…'])),200)}
  p.acted=true;G.waiting=false;G.toAct=nextActive(i);render();nextAction()}
 function collect(){G.P.forEach(p=>{G.pot+=p.bet;p.bet=0})}
 function nextStreet(){collect();G.P.forEach(p=>{p.acted=false;if(!p.folded&&!p.allin)p.lastAct=''});if(G.street===0)G.lastAggrPF=G.lastAggr;G.currentBet=0;G.minRaise=blinds()[1];G.raises=0;G.lastAggr=-1;G.street++;
@@ -1041,11 +1109,11 @@ function mttPanel(){const all=G.field.map(f=>({n:f.n,c:f.c}));G.P.forEach(p=>{if
  <details class="hist" ${G.lbOpen?'open':''} ontoggle="G.lbOpen=this.open"><summary>📋 Leaderboard</summary>${rows.map(([r,x])=>`<div class="lbr ${x.me?'me':''}"><span>${r}. ${x.n}</span><span>${fmt(x.c)}</span></div>`).join('')}</details></div>`}
 setInterval(()=>{if(VIEW==='table'&&G.mtt){const e=document.getElementById('clk');if(e)e.textContent=clk()}},1000);
 function afterHand(){if(G.mtt)return afterMTT();if(!G.tour)return;const h=G.P[0];const others=G.P.filter(p=>!p.human&&p.chips>0).length;const pool=G.fee*G.P.length;
- if(G.spin&&!G.daily){if(h.chips<=0){G.gameOver=1;G.msg+=` · You’re out — finished ${ord(others+1)} · no re-entry`}else if(!others){G.gameOver=1;const prize=G.fee*G.spin;WALLET+=LGp(prize);STATS.net.tour+=prize;chkOf().tw+=prize;addWeek(prize);unlockTour(G.tableId);mis('tourwin');STATS.tWon++;ach('sng');if(G.spin>=10)ach('spinbig');G.msg+=` · You won the Spin & Go! ${G.spin}× prize: ${fmt(prize)} 🎰`;setTimeout(SND.win,500)}return}
+ if(G.spin&&!G.daily){if(h.chips<=0){G.gameOver=1;G.msg+=` · You’re out — finished ${ord(others+1)} · no re-entry`}else if(!others){G.gameOver=1;const prize=G.fee*G.spin;WALLET+=LGp(prize);STATS.net.tour+=prize;chkOf().tw+=prize;addWeek(prize);unlockTour(G.tableId);mis('tourwin');STATS.tWon++;ach('sng');addRingWin('spin');if(G.spin>=10)ach('spinbig');G.msg+=` · You won the Spin & Go! ${G.spin}× prize: ${fmt(prize)} 🎰`;setTimeout(SND.win,500)}return}
  if(G.daily){if(h.chips<=0){G.gameOver=1;dailyEnd(others+1)}else if(!others){G.gameOver=1;STATS.tWon++;mis('tourwin');dailyEnd(1);setTimeout(SND.win,500)}return}
  if(h.chips<=0){G.gameOver=1;const place=others+1;const prize=place===2?Math.round(pool*.3):0;
   if(prize){WALLET+=LGp(prize);STATS.net.tour+=prize;addWeek(prize)}G.msg+=` · You’re out — finished ${ord(place)}${prize?` and won ${fmt(prize)} 🥈`:''} · no re-entry`}
- else if(!others){G.gameOver=1;const prize=Math.round(pool*.7);WALLET+=LGp(prize);STATS.net.tour+=prize;chkOf().tw+=prize;addWeek(prize);unlockTour(G.tableId);mis('tourwin');STATS.tWon++;ach('sng');G.msg+=` · You won the tournament! Prize: ${fmt(prize)} 🥇`;setTimeout(SND.win,500)}}
+ else if(!others){G.gameOver=1;const prize=Math.round(pool*.7);WALLET+=LGp(prize);STATS.net.tour+=prize;chkOf().tw+=prize;addWeek(prize);unlockTour(G.tableId);mis('tourwin');STATS.tWon++;ach('sng');addRingWin('sng');G.msg+=` · You won the tournament! Prize: ${fmt(prize)} 🥇`;setTimeout(SND.win,500)}}
 function equity(p,base){const T=TYPES[G.type],h=T.h;const opps=G.P.filter(q=>!q.folded&&q!==p).length;if(!opps)return 1;const known=p.hole.concat(G.board);
  const per=T.o?comb(h,2).length*10:21;const sims=Math.max(40,Math.min(base||{2:400,4:220,5:150,6:110}[h],Math.floor(90000/((opps+1)*per))));
  const rest=FULL.filter(c=>!known.some(k=>k.r===c.r&&k.s===c.s));const need=opps*h+5-G.board.length;let w=0;
@@ -1058,7 +1126,7 @@ function aiAct(p){const i=G.P.indexOf(p),S0=STY[p.style]||STY.tag;
  // tilt: after losing a big pot a bot plays looser, more aggressive and bluffs more for a few hands
  const S=p.tilt>0?{tight:S0.tight*.82,aggr:S0.aggr*1.4,bluff:S0.bluff+.1}:S0;
  // skill scales with stakes: low-stakes bots misjudge their equity more
- const sk=botSkill();const eq=Math.max(0,Math.min(1,equity(p)+(Math.random()-.5)*sk));const opp=G.P.filter(q=>!q.folded&&q!==p).length;
+ const sk=botSkill()*(S0.pro?.35:1);const eq=Math.max(0,Math.min(1,equity(p)+(Math.random()-.5)*sk));const opp=G.P.filter(q=>!q.folded&&q!==p).length;
  const late=i===G.dealer||nextLive(i)===G.dealer;const rel=eq*(opp+1)*(late?1.08:1);
  const tc=G.currentBet-p.bet,pt=potTotal(),odds=tc/(pt+tc),r=Math.random(),bb=blinds()[1],unit=blinds()[0];
  const canR=G.raises<4&&p.chips>tc&&maxTo(p)>G.currentBet;
@@ -1067,16 +1135,17 @@ function aiAct(p){const i=G.P.indexOf(p),S0=STY[p.style]||STY.tag;
   adj=vsHuman?(hAgg>.35?.06:hAgg<.12?-.05:0)+(bR>.4?.07:bR<.1&&HM.sd>=4?-.05:0)*(1-sk*2):0; // remembers when you were caught bluffing
  let size=Math.round((G.currentBet+(pt+tc)*(.45+r*.55))/unit)*unit;if(rel>2.2&&r<.25*S.aggr)size=maxTo(p);
  const bluff=Math.random()<S.bluff*.75*(late?1.5:1);
- if(G.street===0){const opened=G.raises>0,op=Math.max(bb*2,Math.round(bb*(2.5+r)/unit)*unit),o3=Math.round(G.currentBet*3/unit)*unit;
+ if(G.street===0){const opened=G.raises>0,op=Math.max(bb*2,Math.round(bb*(S0.pro?2.2+r*.3:2.5+r)/unit)*unit),o3=Math.round(G.currentBet*3/unit)*unit;
   if(tc<=0){if(canR&&rel>1.5*S.tight&&Math.random()<Math.min(.9,.6*S.aggr))act(i,'raise',op);else act(i,'check');return}
   if(!opened){if(canR&&rel>1.45*S.tight&&Math.random()<Math.min(.9,.55*S.aggr))act(i,'raise',op);
-   else if(rel>1.12*S.tight||(late&&rel>.98*S.tight&&Math.random()<.4))act(i,'call');
+   else if(rel>1.12*S.tight||(late&&rel>(S0.pro?.9:.98)*S.tight&&Math.random()<(S0.pro?.6:.4)))act(i,'call');
    else if(canR&&late&&bluff)act(i,'raise',op);else act(i,'fold');return}
   const th=1.32*S.tight-adj*2;
   if(canR&&rel>1.9*S.tight&&Math.random()<Math.min(.9,(G.raises>=2?.7:.55)*S.aggr))act(i,'raise',rel>2.4&&(r<.3||G.raises>=2)?maxTo(p):o3);
   else if(canR&&late&&G.raises===1&&rel>1.05*S.tight&&Math.random()<S.bluff*.9)act(i,'raise',o3);
   else if(rel>th||(tc<=bb&&rel>1.08*S.tight))act(i,'call');else act(i,'fold');return}
  // ---- post-flop brain: draws, semi-bluffs, missed-draw bluffs, traps and re-raises ----
+ if(S0.pro)size=Math.max(bb,Math.round(pt*(.33+r*.22)/unit)*unit)+G.currentBet;
  const dr=G.street<3?drawInfo(p):0,made=Math.floor((bestScore(p.hole,G.board,TYPES[G.type].o)||0)/759375);
  if(dr)p.drew=G.street; // remember it was chasing a draw
  const missed=G.street===3&&p.drew&&eq<.3&&made<=1; // waited for a card that never came
@@ -1096,6 +1165,12 @@ function aiAct(p){const i=G.P.indexOf(p),S0=STY[p.style]||STY.tag;
   if(canR&&opp<=2&&!dr&&(G.street<3||G.lastAggrPF===i)&&Math.random()<(G.lastAggrPF===i?.5:.18)*S.aggr*(G.street===3?.5:1)){p.barrel=G.street+1;return act(i,'raise',potBet(.45+r*.25))}
   return act(i,'check')}
  const eqv=eq*(.8+.1*(2-Math.min(2,G.raises)));
+ // PRO: reads you — a tight player betting big means real strength, so it can lay down a good hand
+ if(S0.pro&&vsHuman){const tightH=HM.act>=8?hAgg<.2:true,bigBet=tc>=pt*.35;
+  if(G.street>=2&&Math.random()<.3)later(()=>say(i,proRead(p)),250);
+  if(bigBet&&tightH&&made>=1&&made<=2&&!(made===2&&eq>.9)&&(G.street===3||G.raises>=2)&&Math.random()<.7){if(Math.random()<.5)later(()=>say(i,pick(['I think you have it. Good hand 👍','Big laydown… I fold','You got me this time 🙂','I know you’re strong here'])),300);return act(i,'fold')}
+  if(bigBet&&made<=1&&made>=1&&(!tightH||G.street<3)){if(!tightH&&G.street===3&&Math.random()<.4)later(()=>say(i,pick(['I don’t believe you 😏','You like to bluff — I call','Show me!'])),250);return act(i,'call')}
+  if(bR>.4&&HM.sd>=3&&made>=1&&eq>=odds*.7&&G.street===3){later(()=>say(i,pick(['I don’t believe you 😏','You like to bluff — I call','Show me!'])),250);return act(i,'call')}}
  // check-raise after a trap, or re-raise with a strong hand
  if(canR&&p.trap&&strong)return act(i,'raise',r<.35?maxTo(p):Math.round((G.currentBet*3+pt*.3)/unit)*unit);
  if(canR&&strong&&Math.random()<Math.min(.9,(G.raises>=2?.5:.6)*S.aggr+.15))return act(i,'raise',G.raises>=2&&r<.45?maxTo(p):Math.round((G.currentBet*2.8+pt*.2)/unit)*unit);
@@ -1108,6 +1183,9 @@ function aiAct(p){const i=G.P.indexOf(p),S0=STY[p.style]||STY.tag;
  if(canR&&missed&&huBluffOK&&G.raises<2&&Math.random()<.06+S.bluff*.4)return act(i,'raise',Math.round(G.currentBet*2.6/unit)*unit);
  if(canR&&bluff&&huBluffOK&&Math.random()<.3)return act(i,'raise',size);
  act(i,'fold')}
+function proRead(p){const b=G.board,su=[0,1,2,3].map(x=>b.filter(c=>c.s===x).length),fl=Math.max(...su)>=3,pr=new Set(b.map(c=>c.r)).size<b.length,rs=[...new Set(b.map(c=>c.r))].sort((a,c)=>a-c);let st=false;for(let k=0;k+2<rs.length;k++)if(rs[k+2]-rs[k]<=4)st=true;
+ const o=[];if(fl)o.push('Feels like a flush draw to me 🤔','You have the flush? I don’t think so');if(pr)o.push('You have the trips? Hmm…','Did that pair help you?');if(st)o.push('Straight draw, right?');
+ o.push('I put you on ace-king…','Let me guess — pocket pair?','You’re not that strong here 😏','Hmm, what do you have…','I’ve seen this move before');return pick(o)}
 // draw strength: 0 none, 1 gutshot/weak, 2 flush or open-ended, 3 combo
 function drawInfo(p){const o=TYPES[G.type].o,b=G.board;if(b.length<3||b.length>4)return 0;
  const pairs=o?comb(p.hole.length,2).map(ix=>[p.hole[ix[0]],p.hole[ix[1]]]):[p.hole];let best=0;
@@ -1662,8 +1740,8 @@ function seat(p,i,pos){const turn=G.toAct===i&&!G.handOver;let cs='';
  return `<div class="st ${turn?'on':''} ${p.folded?'f':''} ${p.win?'w':''} ${p.human?'me':''} ${!p.human&&!G.spect?'tap':''}" data-i="${i}" style="${pos}" ${!p.human&&!G.spect?`onclick="openThrow(${i})" title="Throw something"`:''}>
  ${G.bub&&G.bub[i]&&G.bub[i].until>Date.now()?`<div class="bub">${G.bub[i].t}</div>`:''}
  <div class="sh"><span class="av ${p.human?'myfr':''}">${p.human?PROF.av:(p.av||avFor(p.name))}${G.gift&&G.gift[i]?`<span class="gift">${G.gift[i]}</span>`:''}</span><div><div class="nm">${p.human?esc(PROF.name):esc(p.name)} ${G.dealer===i?'<span class="db">D</span>':''}</div>
- <div class="ch">${p.out?'Out':short(p.chips)}</div></div></div>${p.style?`<div class="sty">🤖 ${STY[p.style].he}${p.tilt>0?' · 😤 Tilt':''}</div>`:p.remote?'<div class="sty">👤 Player</div>':''}<div class="cards ${!p.human&&p.hole.length>=4?'ov':''}" style="margin:4px 0">${cs}</div>
- ${p.hn?`<div class="hn">${p.hn}</div>`:''}${p.lastAct?`<div class="act ${actCls(p.lastAct)}">${p.lastAct}</div>`:''}${turn?'<div class="tmr"><i data-tmr></i></div>':''}
+ <div class="ch">${p.out?'Out':short(p.chips)}</div></div></div>${p.style?`<div class="sty ${p.style==='pro'?'pro':''}">${p.style==='pro'?'⭐':'🤖'} ${STY[p.style].he}${p.tilt>0?' · 😤 Tilt':''}</div>`:p.remote?'<div class="sty">👤 Player</div>':''}<div class="cards ${!p.human&&p.hole.length>=4?'ov':''}" style="margin:4px 0">${cs}</div>
+ ${p.hn?`<div class="hn">${p.hn}</div>`:''}${p.lastAct?`<div class="act ${actCls(p.lastAct)}">${p.lastAct}</div>`:''}${turn?'<div class="tmr"><i data-tmr></i></div>':''}${turn&&!p.human&&!(G.bub&&G.bub[i]&&G.bub[i].until>Date.now())?'<div class="thk"><i></i><i></i><i></i></div>':''}
  ${p.bet>0?`<span class="chip ${bnw?'nw':''}"><i class="ci"></i>${short(p.bet)}</span>`:''}</div>`}
 const actCls=a=>/^Fold/.test(a)?'fold':/^Check/.test(a)?'check':/^Call/.test(a)?'call':/^All/.test(a)?'allin':'raise';
 function histPanel(){if(!G.hist||!G.hist.length)return'';
@@ -1838,6 +1916,12 @@ Object.assign(HE,{'🛡️ Club':'🛡️ מועדון','Clubs':'מועדוני�
 'Copy club code':'העתק קוד מועדון','Leave club':'עזוב מועדון','Sure? Tap again':'בטוח? לחץ שוב','Club code copied':'קוד המועדון הועתק','Pick a name with at least 2 letters':'בחר שם עם לפחות 2 אותיות','Please choose a different name':'בחר שם אחר בבקשה','A club code has 5 characters':'לקוד מועדון יש 5 תווים','No club found with that code':'לא נמצא מועדון עם הקוד הזה','Sign in to claude.ai to use clubs':'צריך להתחבר ל־claude.ai כדי להשתמש במועדונים',
 '5,000 Hands':'5,000 ידיים','Play 5,000 hands':'שחק 5,000 ידיים','Level 25':'רמה 25','Reach level 25':'הגע לרמה 25','Pure Bluff':'בלוף טהור','Win a pot with nothing — everyone folded to your bet':'זכה בקופה בלי כלום ביד — כולם ויתרו מול ההימור שלך','Big Spin':'ספין ענק','Win a Spin & Go worth 10× or more':'נצח בספין אנד גו של פי 10 או יותר','Club Member':'חבר מועדון','Join or create a club':'הצטרף למועדון או פתח אחד','On the Home Screen':'במסך הבית','Play from the installed app':'שחק מהאפליקציה המותקנת',
 'Spin & Go':'ספין אנד גו','Spin & Go Gold':'ספין אנד גו זהב','Omaha Spin':'ספין אומהה','🎰 Spin':'🎰 ספין','Prize':'פרס','Up to 100×':'עד פי 100','3 players · 500 chips each · blinds up every 3 hands · winner takes all':'3 שחקנים · 500 צ׳יפים לכל אחד · הבליינדים עולים כל 3 ידיים · המנצח לוקח הכל','Spinning the prize…':'מגריל את הפרס…'});
+Object.assign(HE,{'Choose a game':'בחר משחק','Play now':'שחק עכשיו','Choose a table':'בחירת שולחן','Win up to 100×':'זכה עד פי 100','Champion rings':'טבעות אלופים','Texas Hold’em':'טקסס הולדם','Omaha':'אומהה','No-limit · 2 hole cards':'נו-לימיט · 2 קלפים ביד','Pot-limit · 4 to 6 hole cards':'פוט-לימיט · 4 עד 6 קלפים ביד','players':'שחקנים','Daily Challenge':'האתגר היומי',
+'Missions':'משימות','Style':'סטייל','Spin':'סיבוב','Club':'מועדון','Ranks':'דירוג','Rings':'טבעות','All rings collected 💎':'אספת את כל הטבעות 💎','💍 Champion rings':'💍 טבעות אלופים','Win tournaments to earn rings. Every ring pays chips.':'נצח בטורנירים כדי לזכות בטבעות. כל טבעת שווה צ׳יפים.',
+'Bronze':'ארד','Silver':'כסף','Gold':'זהב','Diamond':'יהלום','No tournament fits your bankroll right now':'אין כרגע טורניר שמתאים לכמות הצ׳יפים שלך','PRO':'מקצוען',
+'I think you have it. Good hand 👍':'נראה לי שיש לך את זה. יד טובה 👍','Big laydown… I fold':'ויתור כואב… אני יוצא','You got me this time 🙂':'הפעם תפסת אותי 🙂','I know you’re strong here':'אני יודע שאתה חזק פה','I don’t believe you 😏':'אני לא מאמין לך 😏','You like to bluff — I call':'אתה אוהב לבלף — אני משווה','Show me!':'תראה לי!',
+'Feels like a flush draw to me 🤔':'מרגיש לי כמו דרו לצבע 🤔','You have the flush? I don’t think so':'יש לך צבע? לא נראה לי','You have the trips? Hmm…':'יש לך שלישייה? הממ…','Did that pair help you?':'הזוג הזה עזר לך?','Straight draw, right?':'דרו לרצף, נכון?','I put you on ace-king…':'אני שם אותך על אס-מלך…','Let me guess — pocket pair?':'תן לי לנחש — זוג ביד?','You’re not that strong here 😏':'אתה לא כזה חזק פה 😏','Hmm, what do you have…':'הממ, מה יש לך…','I’ve seen this move before':'ראיתי את המהלך הזה כבר',
+'All in! 💥':'אול-אין! 💥','Let’s gamble 🎲':'בוא נהמר 🎲','I’m all in 😎':'אני אול-אין 😎','Your move…':'התור שלך…','Re-raise 🔥':'רי-רייז 🔥','Not so fast…':'לא כל כך מהר…','I like my hand 😏':'אני אוהב את היד שלי 😏','Too rich for me':'יקר לי מדי','Nice bet 👏':'הימור יפה 👏','Fold…':'מוותר…'});
 Object.assign(HE,{'Install as app':'התקנה כאפליקציה','📱 Install as an app':'📱 התקנה כאפליקציה','ChipStorm gets its own icon on your home screen and opens full screen, like a real app. It’s free and takes 10 seconds.':'ל־ChipStorm יהיה אייקון משלו במסך הבית, והוא ייפתח במסך מלא כמו אפליקציה אמיתית. זה בחינם ולוקח 10 שניות.',
 'Install ChipStorm':'התקן את ChipStorm','On iPhone / iPad (Safari)':'באייפון / אייפד (Safari)','On iPhone / iPad':'באייפון / אייפד','Open this page in Safari':'פתח את הדף הזה ב־Safari','Tap the Share button (square with an arrow up)':'לחץ על כפתור השיתוף (ריבוע עם חץ למעלה)','Choose “Add to Home Screen”, then “Add”':'בחר ״הוספה למסך הבית״ ואז ״הוסף״',
 'On Android (Chrome)':'באנדרואיד (Chrome)','Tap the ⋮ menu at the top right':'לחץ על התפריט ⋮ למעלה','Choose “Install app” or “Add to Home screen”':'בחר ״התקנת אפליקציה״ או ״הוספה למסך הבית״','📱 ChipStorm is on your home screen':'📱 ChipStorm נמצא עכשיו במסך הבית'});
@@ -1888,6 +1972,7 @@ Object.assign(HE,{'bot':'בוט','Blinds':'בליינדים','Buy-in':'כניס�
 'That table’s host is banned':'המארח של השולחן חסום','You can’t join real-player tables right now':'אי אפשר להצטרף כרגע לשולחנות עם שחקנים אמיתיים','That tournament has already started':'הטורניר כבר התחיל','🏆 The tournament has started — good luck!':'🏆 הטורניר התחיל — בהצלחה!','Need at least 2 players':'צריך לפחות 2 שחקנים',
 '🔐 Shuffling and dealing securely…':'🔐 מערבבים ומחלקים בצורה מאובטחת…','🔐 Revealing and verifying cards…':'🔐 חושפים ובודקים את הקלפים…','↻ Replay':'↻ הפעל שוב','Play ChipStorm':'שחק ChipStorm'});
 HE_RX.push([/^🎰 (Spin & Go|Spin & Go Gold|Omaha Spin)$/,(m,a)=>'🎰 '+HE[a]]);
+HE_RX.push([/^(\d+) live tables$/,(m,a)=>`${a} שולחנות פעילים`],[/^Ends in (.+)$/,(m,a)=>`נגמר בעוד ${a}`],[/^Prize pool (.+)$/,(m,a)=>`קופת פרסים ${a}`],[/^(\d+)\/(\d+) wins · (\w+) ring$/,(m,a,b,c)=>`${a}/${b} ניצחונות · טבעת ${HE[c]||c}`],[/^Buy-in (.+)$/,(m,a)=>`כניסה ${a}`],[/^top (\d+) get paid$/,(m,a)=>`${a} הראשונים זוכים`],[/^Out · back in (.+)$/,(m,a)=>`הודחת · חוזר בעוד ${a}`],[/^Need (.+)$/,(m,a)=>`צריך ${a}`],[/^(\d+) wins?$/,(m,a)=>`${a} ניצחונות`],[/^Spin & Go · (\d+) wins$/,(m,a)=>`ספין אנד גו · ${a} ניצחונות`],[/^Sit & Go · (\d+) wins$/,(m,a)=>`סיט אנד גו · ${a} ניצחונות`],[/^💍 New (\w+) (Spin|Sit & Go) ring! \+(.+)$/,(m,a,b,c)=>`💍 טבעת ${HE[a]||a} חדשה ב${b==='Spin'?'ספין':'סיט אנד גו'}! +${c}`]);
 HE_RX.push([/^Playing for ([\d,]+) chips$/,(m,a)=>`משחקים על ${a} צ׳יפים`],[/^🛡️ Club “(.+)” created — share the code (\w+)$/,(m,a,b)=>`🛡️ המועדון ״${a}״ נפתח — שתף את הקוד ${b}`],[/^🛡️ You joined (.+)$/,(m,a)=>`🛡️ הצטרפת ל־${a}`],[/^You left (.+)$/,(m,a)=>`עזבת את ${a}`],[/^Code (\w+)$/,(m,a)=>`קוד ${a}`],[/^(\d+) members$/,(m,a)=>`${a} חברים`],[/^You won the Spin & Go! (\d+)× prize: ([\d,]+) 🎰$/,(m,a,b)=>`ניצחת בספין אנד גו! פרס פי ${a}: ${b} 🎰`]);
 HE_RX.push([/^(\d+) items$/,(m,a)=>`${a} פריטים`],[/^Raise to (.+)$/,(m,a)=>`רייז ל־${a}`],[/^Bet (.+)$/,(m,a)=>`הימור ${a}`],[/^(\d+) rewards ready$/,(m,a)=>`${a} פרסים מוכנים`],[/^([\d,]+) ready now$/,(m,a)=>`${a} מוכן עכשיו`],[/^Entry (.+)$/,(m,a)=>`כניסה ${a}`],[/^prize pool (.+)$/,(m,a)=>`קופת פרסים ${a}`],[/^pool (.+)$/,(m,a)=>`קופה ${a}`],
 [/^▶ Start tournament \((\d+) players\)$/,(m,a)=>`▶ התחל טורניר (${a} שחקנים)`],[/^🏆 (.+) won the friends tournament(?: and ([\d,]+) chips)?!$/,(m,a,b)=>`🏆 ${a} ניצח בטורניר החברים${b?` וזכה ב־${b} צ׳יפים`:''}!`],[/^🏆 You won ([\d,]+) chips in the tournament!$/,(m,a)=>`🏆 זכית ב־${a} צ׳יפים בטורניר!`],
